@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "d8QmjWcP0XJj+ixpGxKc5mAaDurYzZtqF2IxOXyNCD8=",
+  "Source": "stay_away",
+  "BasePath": "_content/stay_away",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "stay_away\\wwwroot",
+      "Source": "stay_away",
+      "ContentRoot": "C:\\projects\\stay_away\\stay_away\\stay_away\\wwwroot\\",
+      "BasePath": "_content/stay_away",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\projects\\stay_away\\stay_away\\stay_away\\wwwroot\\index.html",
+      "SourceId": "stay_away",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\projects\\stay_away\\stay_away\\stay_away\\wwwroot\\",
+      "BasePath": "_content/stay_away",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

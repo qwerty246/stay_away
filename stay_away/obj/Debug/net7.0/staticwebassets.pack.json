@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\projects\\stay_away\\stay_away\\stay_away\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.stay_away.props",
+      "PackagePath": "build\\stay_away.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.stay_away.props",
+      "PackagePath": "buildMultiTargeting\\stay_away.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.stay_away.props",
+      "PackagePath": "buildTransitive\\stay_away.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.stay_away.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

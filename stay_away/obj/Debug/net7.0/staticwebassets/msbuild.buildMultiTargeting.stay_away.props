@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\stay_away.props" />
+</Project>

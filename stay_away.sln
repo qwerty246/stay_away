@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stay_away", "stay_away\stay_away.csproj", "{BB447E9E-8479-4443-B1EB-B80C4EC9949D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB447E9E-8479-4443-B1EB-B80C4EC9949D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB447E9E-8479-4443-B1EB-B80C4EC9949D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB447E9E-8479-4443-B1EB-B80C4EC9949D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB447E9E-8479-4443-B1EB-B80C4EC9949D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {520D1D8D-B6D1-48C6-9A74-477BEA164E0E}
+	EndGlobalSection
+EndGlobal
