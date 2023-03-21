@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stay_away", "stay_away\stay_away.csproj", "{BB447E9E-8479-4443-B1EB-B80C4EC9949D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "stay_away", "stay_away\stay_away.csproj", "{BB447E9E-8479-4443-B1EB-B80C4EC9949D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
