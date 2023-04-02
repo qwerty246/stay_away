@@ -1,3 +1,6 @@
-/stay_away/bin
-/stay_away/obj
+/.vs/ProjectEvaluation/
+/.vs/stay_away/FileContentIndex/
+/.vs/stay_away/v17/.futdcache.v2
+/stay_away/bin/
+/stay_away/obj/
 /stay_away/stay_away.csproj.user
