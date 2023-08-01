@@ -1,4 +1,6 @@
 ﻿// начальные данные
+using System.Diagnostics.Metrics;
+
 List<Person> users = new List<Person>
 {
     new() { Id = Guid.NewGuid().ToString(), Name = "Tom", Age = 37 },
@@ -60,6 +62,13 @@ app.MapPut("/api/users", (Person userData) => {
     return Results.Json(user);
 });
 
+app.MapPut("/counters", (Counter countTemp) => {
+
+    if (countTemp == null) return Results.NotFound(new { message = "Чет не так" });
+    countTemp.Value++;
+    return Results.Json(countTemp);
+});
+
 app.Run();
 
 public class Person
@@ -67,4 +76,9 @@ public class Person
     public string Id { get; set; } = "";
     public string Name { get; set; } = "";
     public int Age { get; set; }
+}
+
+public class Counter
+{
+    public int Value { get; set; }
 }

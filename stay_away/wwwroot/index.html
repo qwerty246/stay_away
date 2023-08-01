@@ -14,8 +14,11 @@
     </style>
 </head>
 <body>
+
     <h2>Список пользователей</h2>
     <div>
+        <p id="counterId">99</p>
+        <button id="increment">increment</button>
         <p><a href="main_page.html">Макет НЕЧТО</a></p>
         <input type="hidden" id="userId" />
         <p>
@@ -37,7 +40,8 @@
         </tbody>
     </table>
 
-    <script>// Получение всех пользователей
+    <script>
+    // Получение всех пользователей
         async function getUsers() {
             // отправляет запрос и получаем ответ
             const response = await fetch("/api/users", {
@@ -93,7 +97,7 @@
         }
         // Изменение пользователя
         async function editUser(userId, userName, userAge) {
-            const response = await fetch("api/users", {
+            const response = await fetch("api/users",{
                 method: "PUT",
                 headers: { "Accept": "application/json", "Content-Type": "application/json" },
                 body: JSON.stringify({
@@ -130,8 +134,8 @@
         // сброс данных формы после отправки
         function reset() {
             document.getElementById("userId").value =
-            document.getElementById("userName").value =
-            document.getElementById("userAge").value = "";
+                document.getElementById("userName").value =
+                document.getElementById("userAge").value = "";
         }
         // создание строки для таблицы
         function row(user) {
@@ -151,7 +155,7 @@
 
             const editLink = document.createElement("button");
             editLink.append("Изменить");
-            editLink.addEventListener("click", async() => await getUser(user.id));
+            editLink.addEventListener("click", async () => await getUser(user.id));
             linksTd.append(editLink);
 
             const removeLink = document.createElement("button");
@@ -164,7 +168,7 @@
             return tr;
         }
         // сброс значений формы
-        document.getElementById("resetBtn").addEventListener("click", () =>  reset());
+        document.getElementById("resetBtn").addEventListener("click", () => reset());
 
         // отправка формы
         document.getElementById("saveBtn").addEventListener("click", async () => {
@@ -179,6 +183,46 @@
             reset();
         });
 
+        // Изменение счетчика
+        async function incrementCounter(counter) {
+            const response = await fetch("/counters", {
+                method: "PUT",
+                headers: { "Accept": "application/json", "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    //count: parseInt(counter, 10)
+                    //value: parseInt(counter, 10)
+                    value: parseInt(counter, 10)
+                })
+            });
+            if (response.ok === true) {
+                const count3 = await response.json();
+                document.getElementById("counterId").replaceWith(newCounter(count3));
+            }
+            else {
+                const error = await response.json();
+                console.log(error.message);
+            }
+        }
+        // изменение счетчика по кнопке
+        document.getElementById("increment").addEventListener("click", async () => {
+
+            const counterBtn = document.getElementById("counterId").innerHTML;
+            /**/console.log("123");
+            /**/console.log(document.getElementById("counterId"));
+            /**/console.log(document.getElementById("counterId").innerHTML);
+            await incrementCounter(counterBtn);
+            reset();
+        });
+
+        function newCounter(newCount) {
+
+            const p = document.createElement("p");
+            p.setAttribute("id", "counterId");
+            p.append(newCount.value);
+
+            return p;
+        }
+        
         // загрузка пользователей
         getUsers();</script>
 </body>
